@@ -1,2 +1,18 @@
 <!--pages/home/home.wxml-->
-<text class= 'title'>helloworld</text>
+<text class='title'>helloworld</text>
+
+
+<!-- 获取用户信息的方式 -->
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">获取授权</button>
+
+
+
+<!-- 展示用户信息的方法 -->
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+
+
+<view wx:for="{{list}}" wx:key="key">{{item.cityName}}</view>
+<view wx:for="{{list}}" wx:key="key">{{item.cityName}}</view>
+<view wx:for="{{list}}" wx:key="key">{{item.cityName}}</view>
+<view wx:for="{{list}}" wx:key="key">{{item.cityName}}</view>
